@@ -82,7 +82,7 @@ function setup() {
   formContainer.addClass('form-grid');
 
   patternArraysDiv = createDiv().parent(formContainer);
-  createP("Total bullet Arrays:").parent(patternArraysDiv);
+  createP("Total Bullet Arrays:").parent(patternArraysDiv);
   patternArraysInput = createInput(1, "number");
   patternArraysInput.parent(patternArraysDiv);
 
