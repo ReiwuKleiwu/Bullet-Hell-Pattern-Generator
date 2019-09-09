@@ -197,9 +197,9 @@ function setup() {
 function draw() {
 
   strokeWeight(3);
-  stroke(0);
+  stroke(255, 255, 255);
   noFill();
-  background(220);
+  background(3);
   translate(640, 360);
 
 
@@ -222,7 +222,7 @@ function draw() {
   bulletCurve = Number(bulletCurveInput.value());
   bulletTTL = Number(bulletTTLInput.value());
 
-  console.log(bulletTTL);
+ 
 
   textSize(32);
   text('Spin Rate: ' + spinRate, 350, 300);
