@@ -11,7 +11,7 @@ let defaultAngle = 0;
 
 //Spinning Variables
 let beginSpinSpeed = 1;
-let spinRate = 1; // The rate at which the pattern is spinning
+let spinRate = 0; // The rate at which the pattern is spinning
 let spinModificator = 0 // The modificator of the spin rate
 let invertSpin = 1; // (1 = spinRate gets inversed once SpinRate >= maxSpinRate  || 0 = Spin doesn't invert at all)
 let maxSpinRate = 10; //The max spin rate ->if SpinRate >= maxSpinRate --> inverts spin
@@ -27,10 +27,10 @@ let xOffset = 0 //Shift spawn point of the bullets along the X-Axis
 let yOffset = 0 //Shift spawn point of the bulltes along the Y-Axis
 
 //Bullet Variables
-let bulletSpeed = 3;
-let bulletAcceleration = -0.01;
+let bulletSpeed = 1;
+let bulletAcceleration = 0;
 let bulletCurve = 0;
-let bulletTTL = 200;
+let bulletTTL = 3000;
 
 //DOM ELements
 let patternArraysInput;
@@ -159,7 +159,7 @@ function setup() {
 
   bulletSpeedDiv = createDiv().parent(formContainer);
   createP("Bullet Speed:").parent(bulletSpeedDiv);
-  bulletSpeedInput = createInput(0.5, "number");
+  bulletSpeedInput = createInput(3, "number");
   bulletSpeedInput.addClass('bulletInput');
   bulletSpeedInput.parent(bulletSpeedDiv);
 
@@ -177,7 +177,7 @@ function setup() {
 
   bulletTTLDiv = createDiv().parent(formContainer);
   createP("Bullet TTL:").parent(bulletTTLDiv);
-  bulletTTLInput = createInput(200, "number");
+  bulletTTLInput = createInput(3000, "number");
   bulletTTLInput.parent(bulletTTLDiv);
 
 
