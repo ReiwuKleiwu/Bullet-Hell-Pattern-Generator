@@ -2,7 +2,7 @@
 A highly customizable program which allows you to create radial bullet-hell patterns.
 
 # Demo
-URL: https://reiwukleiwu.github.io/Bullet-Hell-Pattern-Generator/
+URL: https://www.youtube.com/watch?v=whrInb6Z7QI
 
 # Parameters 
 
